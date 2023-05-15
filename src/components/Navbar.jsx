@@ -2,28 +2,18 @@ import logo from "../assets/logo.svg";
 import "./Navbar.css";
 
 export const Navbar = () => {
-  // const goToViolation = (id) => {
-  //   const violation = document.getElementById(id);
-  //   window.scrollTo({
-  //     top: violation.offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
+  const scrollToElement = (el) => {
+    const element = document.getElementById(el);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav>
       <img src={logo} alt="company logo" width={50} height={50} />
       <ul className="nav__links">
-        <li
-          onClick={() => {
-            const historyElement = document.getElementById("history");
-            if (historyElement) {
-              historyElement.scrollIntoView({ behavior: "smooth" });
-            }
-          }}
-        >
-          01. History
-        </li>
-        <li>02. Team</li>
+        <li onClick={() => scrollToElement("history")}>01. History</li>
+        <li onClick={() => scrollToElement("team")}>02. Team</li>
       </ul>
     </nav>
   );

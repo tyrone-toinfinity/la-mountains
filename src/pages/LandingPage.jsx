@@ -19,6 +19,13 @@ export const LandingPage = () => {
           <h1 className="section__title">LA Surfers</h1>
         </div>
       </Parallax>
+
+      {/* third section */}
+      <Parallax bgImage={hero}>
+        <div className="section" id="team">
+          <h1 className="team__title">LA Surfers</h1>
+        </div>
+      </Parallax>
     </div>
   );
 };
