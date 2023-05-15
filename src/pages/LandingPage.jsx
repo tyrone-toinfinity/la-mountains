@@ -8,7 +8,7 @@ export const LandingPage = () => {
     <div>
       {/* First section */}
       <Parallax bgImage={hero} strength={500}>
-        <div className="section">
+        <div className="section" id="hero">
           <h1 className="section__title">LA Mountains</h1>
         </div>
       </Parallax>
