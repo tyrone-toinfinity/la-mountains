@@ -1,13 +1,13 @@
 // Styles
-import "./Footer.css";
+// import "./Footer.css";
 // Assets
 import logo from "../assets/logo.svg";
 
 export const Footer = () => {
   return (
-    <Footer className="footer">
+    <footer className="footer">
       <div className="footer__logo">
-        <img src={logo} alt="company logo" width={25} height={25} />
+        <img src={logo} alt="company logo" width={50} height={50} />
         <div className="footer__title">
           <p>LosAngeles</p>
           <p>Mountains</p>
@@ -16,6 +16,6 @@ export const Footer = () => {
       <div className="footer__copyright">
         <p>CopyRight 2016. All Rights Reserved</p>
       </div>
-    </Footer>
+    </footer>
   );
 };

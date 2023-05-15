@@ -1,0 +1,23 @@
+nav {
+  max-width: 1440px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  text-decoration: underline;
+  font-size: 12px;
+}

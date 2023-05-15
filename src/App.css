@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Apply a box-sizing border-box to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Apply a global font and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Remove the default list styles */
+ul,
+ol {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
 }
 
-.card {
-  padding: 2em;
+/* Set default margin and padding to zero for specific elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
 }
 
-.read-the-docs {
-  color: #888;
+/* Set default max-width for images to ensure responsiveness */
+img {
+  max-width: 100%;
+}
+
+/* Apply a clearfix to handle float containment */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
