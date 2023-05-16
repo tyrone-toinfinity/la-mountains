@@ -1,9 +1,7 @@
 nav {
-  max-width: 1440px;
   background-color: transparent;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: space-around;
   padding: 1rem;
   align-items: center;
   position: fixed;
@@ -20,5 +18,30 @@ nav {
   flex-direction: row;
   gap: 2rem;
   text-decoration: underline;
-  font-size: 12px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.logo {
+  border: #ccc 1px solid;
+  border-radius: 50%;
+}
+.sticky {
+  /* position: sticky; */
+  background-color: #fff;
+  margin: 0 auto;
+  animation: navfade 0.5s ease;
+}
+
+@keyframes navfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav__links--blue {
+  color: #414f6b;
+  text-decoration: underline;
 }
