@@ -8,22 +8,27 @@ export const LandingPage = () => {
     <div>
       {/* First section */}
       <Parallax bgImage={hero} strength={500}>
-        <div className="section" id="hero">
-          <h1 className="section__title">LA Mountains</h1>
+        <div className="section hero " id="hero">
+          <h1 className="section__heroTitle1">LosAngeles </h1>
+          <h1 className="section__heroTitle2">Mountains</h1>
         </div>
       </Parallax>
 
       {/* Second section */}
       <Parallax bgImage={peak}>
         <div className="section" id="history">
-          <h1 className="section__title">LA Surfers</h1>
+          <div>
+            <h2 className="link__num">01.</h2> <p>History</p>
+          </div>
         </div>
       </Parallax>
 
       {/* third section */}
       <Parallax bgImage={hero}>
         <div className="section" id="team">
-          <h1 className="team__title">LA Surfers</h1>
+          <div>
+            <h2 className="link__num">02.</h2> <p>Climb</p>
+          </div>
         </div>
       </Parallax>
     </div>

@@ -10,6 +10,7 @@ nav {
   transform: translateX(-50%);
   z-index: 1000;
   width: 100%;
+  animation: navfade 0.5s ease;
 }
 
 .nav__links {
@@ -21,13 +22,16 @@ nav {
   font-size: 1rem;
   color: #fff;
 }
-
+.nav__links > li:hover,
+.logo:hover {
+  opacity: 0.8;
+  cursor: pointer !important;
+}
 .logo {
   border: #ccc 1px solid;
   border-radius: 50%;
 }
 .sticky {
-  /* position: sticky; */
   background-color: #fff;
   margin: 0 auto;
   animation: navfade 0.5s ease;

@@ -36,18 +36,21 @@ export const Navbar = () => {
         width={50}
         height={50}
         onClick={() => scrollToElement("hero")}
+        onDoubleClick={() => scrollToElement("hero")}
         className="logo"
       />
 
-      <ul className="nav__links  font ">
+      <ul className="nav__links">
         <li
           onClick={() => scrollToElement("history")}
+          onDoubleClick={() => scrollToElement("history")}
           className={isSticky ? "nav__links--blue" : ""}
         >
           01. History
         </li>
         <li
           onClick={() => scrollToElement("team")}
+          onDoubleClick={() => scrollToElement("team")}
           className={isSticky ? "nav__links--blue" : ""}
         >
           02. Team

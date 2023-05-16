@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #414f6b;
+  mix-blend-mode: multiply;
+  padding: 1rem;
+}
+footer > * {
+  opacity: 0.8;
+}
+.footer__title,
+.footer__copyright {
+  color: #63769d;
+  text-transform: uppercase;
+}
+.footer__title {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.footer__title > p:last-child {
+  letter-spacing: 1.5px;
+}
+.footer__logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
