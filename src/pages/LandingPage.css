@@ -2,8 +2,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  /* max-width: 1440px; */
+  color: #fff;
   margin: 0 auto;
 }
 .hero {
@@ -33,10 +32,10 @@
 }
 
 /* History section */
-.history__containter,
-.team__containter {
+.history__container,
+.team__container {
   max-width: 1440px;
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 .link__num {
   color: #8498bd;
@@ -55,6 +54,8 @@
   color: #333;
   line-height: 1.5rem;
 }
+
+/* Team | climb */
 
 .slider__wrapper {
   background-color: rgba(65, 79, 107, 0.5);
@@ -79,4 +80,8 @@
 .team__containter {
   display: flex;
   align-items: center;
+}
+#team {
+  height: auto;
+  background-color: rebeccapurple;
 }

@@ -3,6 +3,7 @@ import "./LandingPage.css";
 import hero from "../assets/Hero-Image-up.jpg";
 import peak from "../assets/peak.jpg";
 import { ImageSlider } from "../components/ImageSlider";
+import { Tabbar } from "../components/Tabbar";
 
 export const LandingPage = () => {
   return (
@@ -18,7 +19,7 @@ export const LandingPage = () => {
       {/* Second section */}
       <Parallax bgImage={peak}>
         <div className="section" id="history">
-          <div className="history__containter">
+          <div className="history__container">
             <h2 className="link__num">01.</h2>{" "}
             <p className="link__numHeader">History</p>
             <div>
@@ -39,10 +40,10 @@ export const LandingPage = () => {
       </Parallax>
 
       {/* third section */}
-      <Parallax bgImage={hero}>
+      {/* <Parallax bgImage={hero}>
         <div className="section" id="team">
           <div className="team__wrapper">
-            <div className="team__containter">
+            <div className="team__container">
               <div className="climb__title">
                 <h2 className="link__num">02.</h2>{" "}
                 <p className="link__numHeader">Climb</p>
@@ -59,14 +60,35 @@ export const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="tabBar">
-            <ul>
-              <li className="tab__links">Mountain1</li>
-              <li className="tab__links">Mountain2</li>
-            </ul>
+          <div className="tabBar__wrapper">
+            <Tabbar />
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
+
+      <div className="section" id="team">
+        <div className="team__wrapper">
+          <div className="team__container">
+            <div className="climb__title">
+              <h2 className="link__num">02.</h2>{" "}
+              <p className="link__numHeader">Climb</p>
+            </div>
+            <div>
+              <p className="team__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, recusandae accusantium, facilis molestias autem nam
+                fugiat sequi consectetur temporibus ipsum error facere
+                dignissimos? Iure et veniam nihil neque. Officia, eveniet.
+                Ratione, consectetur adipisci est deserunt temporibus porro
+                amet, beatae in ipsam iste tempora sint.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="tabBar__wrapper">
+          <Tabbar />
+        </div>
+      </div>
     </div>
   );
 };
