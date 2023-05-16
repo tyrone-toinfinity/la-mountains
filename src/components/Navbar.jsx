@@ -29,20 +29,21 @@ export const Navbar = () => {
   }, []);
   return (
     <nav className={isSticky ? "sticky" : ""}>
-      <img
-        src={logo}
-        alt="company logo"
-        width={50}
-        height={50}
-        onClick={() => scrollToElement("hero")}
-        onDoubleClick={() => scrollToElement("hero")}
-        className="logo"
-      />
-          <div className="nav__title">
+      <div className="nav__logoContainer">
+        <img
+          src={logo}
+          alt="company logo"
+          width={50}
+          height={50}
+          onClick={() => scrollToElement("hero")}
+          onDoubleClick={() => scrollToElement("hero")}
+          className="logo"
+        />
+        <div className={`nav__title ${isSticky ? "show" : "hide"}`}>
           <p>LosAngeles</p>
           <p>Mountains</p>
         </div>
-
+      </div>
       <ul className="nav__links">
         <li
           onClick={() => scrollToElement("history")}

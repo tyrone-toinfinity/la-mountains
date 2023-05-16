@@ -27,6 +27,38 @@ nav {
   opacity: 0.8;
   cursor: pointer !important;
 }
+
+.nav__logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav__title > p:first-child {
+  color: #4d4d4d;
+  letter-spacing: -1px;
+}
+.nav__title > p:last-child {
+  letter-spacing: 1px;
+  background: linear-gradient(
+    0deg,
+    rgba(46, 55, 73, 1) 0%,
+    rgba(65, 79, 107, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+
 .logo {
   border: #ccc 1px solid;
   border-radius: 50%;
