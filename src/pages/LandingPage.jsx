@@ -2,6 +2,7 @@ import { Parallax } from "react-parallax";
 import "./LandingPage.css";
 import hero from "../assets/Hero-Image-up.jpg";
 import peak from "../assets/peak.jpg";
+import { ImageSlider } from "../components/ImageSlider";
 
 export const LandingPage = () => {
   return (
@@ -17,8 +18,22 @@ export const LandingPage = () => {
       {/* Second section */}
       <Parallax bgImage={peak}>
         <div className="section" id="history">
-          <div>
-            <h2 className="link__num">01.</h2> <p>History</p>
+          <div className="history__containter">
+            <h2 className="link__num">01.</h2>{" "}
+            <p className="link__numHeader">History</p>
+            <div>
+              <p className="history__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, recusandae accusantium, facilis molestias autem nam
+                fugiat sequi consectetur temporibus ipsum error facere
+                dignissimos? Iure et veniam nihil neque. Officia, eveniet.
+                Ratione, consectetur adipisci est deserunt temporibus porro
+                amet, beatae in ipsam iste tempora sint.
+              </p>
+            </div>
+            <div className="slider__wrapper">
+              <ImageSlider />
+            </div>
           </div>
         </div>
       </Parallax>
@@ -27,7 +42,8 @@ export const LandingPage = () => {
       <Parallax bgImage={hero}>
         <div className="section" id="team">
           <div>
-            <h2 className="link__num">02.</h2> <p>Climb</p>
+            <h2 className="link__num">02.</h2>{" "}
+            <p className="link__numHeader">Climb</p>
           </div>
         </div>
       </Parallax>

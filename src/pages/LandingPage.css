@@ -1,25 +1,27 @@
 .section {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #ffffff;
-  font-size: 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   position: relative;
+  text-align: center;
+  margin-top: 8rem;
 }
 
 .section__heroTitle1 {
   color: #4d4d4d;
   letter-spacing: -9px;
+  font-size: 8rem;
 }
 .section__heroTitle2 {
   letter-spacing: 4px;
-
+  font-size: 8rem;
   background: linear-gradient(
     0deg,
     rgba(46, 55, 73, 1) 0%,
@@ -27,4 +29,35 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* History section */
+.history__containter {
+  margin: 1rem 2rem;
+}
+
+.link__num {
+  color: #8498bd;
+  font-size: 8rem;
+  display: inline;
+}
+.link__numHeader {
+  display: inline;
+  text-transform: uppercase;
+  color: #45536f;
+  font-size: 2rem;
+}
+.history__body {
+  margin: 1rem 4rem;
+  color: #333;
+  max-width: 1280px;
+  line-height: 1.5rem;
+}
+
+.slider__wrapper {
+  background-color: rgba(65, 79, 107, 0.5);
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 12rem;
 }

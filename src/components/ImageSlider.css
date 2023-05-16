@@ -1,0 +1,44 @@
+.slider__container {
+  position: relative;
+  display: inline-block; /* or any other desired display property */
+}
+
+
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent; /* add any desired styling */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 4px;
+}
+
+.slider__right {
+  right: 8px;
+}
+
+.slider__left {
+  left: 8px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  margin: 0 5px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+}
+
+.active {
+  color: #eee;
+}

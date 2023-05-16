@@ -14,7 +14,6 @@ export const Navbar = () => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos);
     if (currentScrollPos > 620) {
       setIsSticky(true);
     } else {
@@ -39,6 +38,10 @@ export const Navbar = () => {
         onDoubleClick={() => scrollToElement("hero")}
         className="logo"
       />
+          <div className="nav__title">
+          <p>LosAngeles</p>
+          <p>Mountains</p>
+        </div>
 
       <ul className="nav__links">
         <li
