@@ -38,34 +38,6 @@ export const LandingPage = () => {
           </div>
         </div>
       </Parallax>
-
-      {/* third section */}
-      {/* <Parallax bgImage={hero}>
-        <div className="section" id="team">
-          <div className="team__wrapper">
-            <div className="team__container">
-              <div className="climb__title">
-                <h2 className="link__num">02.</h2>{" "}
-                <p className="link__numHeader">Climb</p>
-              </div>
-              <div>
-                <p className="team__body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas, recusandae accusantium, facilis molestias autem nam
-                  fugiat sequi consectetur temporibus ipsum error facere
-                  dignissimos? Iure et veniam nihil neque. Officia, eveniet.
-                  Ratione, consectetur adipisci est deserunt temporibus porro
-                  amet, beatae in ipsam iste tempora sint.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="tabBar__wrapper">
-            <Tabbar />
-          </div>
-        </div>
-      </Parallax> */}
-
       <div className="section" id="team">
         <div className="team__wrapper">
           <div className="team__container">

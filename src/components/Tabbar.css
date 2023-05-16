@@ -68,3 +68,16 @@
 .overlay__list > li > span {
   margin-right: 40px;
 }
+
+@media only screen and (max-width: 650px) {
+  .overlay {
+    left: 5%;
+    top: 10%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .overlay {
+    left: 15%;
+    top: 15%;
+  }
+}

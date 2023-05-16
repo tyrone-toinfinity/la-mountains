@@ -1,6 +1,7 @@
 import logo from "../assets/logo.svg";
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import { BsList, BsX } from "react-icons/bs";
 
 export const Navbar = () => {
   // Scroll to ID
@@ -27,6 +28,8 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // moblie
   return (
     <nav className={isSticky ? "sticky" : ""}>
       <div className="nav__logoContainer">

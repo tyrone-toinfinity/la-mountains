@@ -31,6 +31,29 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media only screen and (max-width: 900px) {
+  .section__heroTitle1,
+  .section__heroTitle2 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .section__heroTitle1,
+  .section__heroTitle2 {
+    font-size: 4rem;
+    letter-spacing: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .section__heroTitle1,
+  .section__heroTitle2 {
+    font-size: 3rem;
+  }
+}
+
+#hero {
+  margin-top: 5rem;
+}
 /* History section */
 .history__container,
 .team__container {
@@ -41,8 +64,10 @@
   color: #8498bd;
   font-size: 8rem;
   display: inline;
+  font-weight: 800;
 }
 .link__numHeader {
+  font-weight: 800;
   display: inline;
   text-transform: uppercase;
   color: #45536f;
