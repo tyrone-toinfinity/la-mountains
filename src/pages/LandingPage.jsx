@@ -31,9 +31,9 @@ export const LandingPage = () => {
                 amet, beatae in ipsam iste tempora sint.
               </p>
             </div>
-            <div className="slider__wrapper">
-              <ImageSlider />
-            </div>
+          </div>
+          <div className="slider__wrapper">
+            <ImageSlider />
           </div>
         </div>
       </Parallax>
@@ -41,9 +41,29 @@ export const LandingPage = () => {
       {/* third section */}
       <Parallax bgImage={hero}>
         <div className="section" id="team">
-          <div>
-            <h2 className="link__num">02.</h2>{" "}
-            <p className="link__numHeader">Climb</p>
+          <div className="team__wrapper">
+            <div className="team__containter">
+              <div className="climb__title">
+                <h2 className="link__num">02.</h2>{" "}
+                <p className="link__numHeader">Climb</p>
+              </div>
+              <div>
+                <p className="team__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, recusandae accusantium, facilis molestias autem nam
+                  fugiat sequi consectetur temporibus ipsum error facere
+                  dignissimos? Iure et veniam nihil neque. Officia, eveniet.
+                  Ratione, consectetur adipisci est deserunt temporibus porro
+                  amet, beatae in ipsam iste tempora sint.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="tabBar">
+            <ul>
+              <li className="tab__links">Mountain1</li>
+              <li className="tab__links">Mountain2</li>
+            </ul>
           </div>
         </div>
       </Parallax>

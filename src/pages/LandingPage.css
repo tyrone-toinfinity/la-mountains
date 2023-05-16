@@ -1,8 +1,9 @@
 .section {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   color: #ffffff;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
 }
 .hero {
@@ -32,10 +33,11 @@
 }
 
 /* History section */
-.history__containter {
-  margin: 1rem 2rem;
+.history__containter,
+.team__containter {
+  max-width: 1440px;
+  margin: 2rem auto;
 }
-
 .link__num {
   color: #8498bd;
   font-size: 8rem;
@@ -47,10 +49,10 @@
   color: #45536f;
   font-size: 2rem;
 }
-.history__body {
+.history__body,
+.team__body {
   margin: 1rem 4rem;
   color: #333;
-  max-width: 1280px;
   line-height: 1.5rem;
 }
 
@@ -60,4 +62,21 @@
   padding: 2rem;
   width: 100%;
   margin-top: 12rem;
+}
+.team__wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.climb__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.team__containter {
+  display: flex;
+  align-items: center;
 }
