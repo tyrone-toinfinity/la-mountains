@@ -1,7 +1,6 @@
 import logo from "../assets/logo.svg";
 import "./Navbar.css";
 import { useState, useEffect } from "react";
-import { BsList, BsX } from "react-icons/bs";
 
 export const Navbar = () => {
   // Scroll to ID
